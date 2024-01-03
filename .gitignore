@@ -1,0 +1,3 @@
+*.bin
+volume/input/*
+volume/output/*

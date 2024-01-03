@@ -1,5 +1,4 @@
-
-https://github.com/ggerganov/whisper.cpp
+Run the (whisper.cpp)[https://github.com/ggerganov/] in a Docker container with GPU support.
 
 ## TLDR
 ```
@@ -39,7 +38,7 @@ LANGUAGE=ru \
 ```
 | Argument    | Values | Defaults |
 | -------- | ------- |------- |
-| model  | base, medium, large, [other options](https://github.com/ggerganov/whisper.cpp/blob/master/models/download-ggml-model.sh#L25)   |   large-v3 
+| model  | base, medium, large, [other options](https://github.com/ggerganov/whisper.cpp/blob/master/models/download-ggml-model.sh#L25)   |   large-v2 
 | language | rn, ru, fr, etc. (depends on the model)     |  ru
 
 ### 5. Result

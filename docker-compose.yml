@@ -7,7 +7,7 @@ services:
     stdin_open: true
     tty: true
     environment:
-      - MODEL=${MODEL:-ggml-large-v3.bin}
+      - MODEL=${MODEL:-large-v2}
       - LANGUAGE=${LANGUAGE:-ru}
     volumes:
       - ./models:/usr/local/src/whisper.cpp/models
