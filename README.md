@@ -1,4 +1,4 @@
-Run the (whisper.cpp)[https://github.com/ggerganov/] in a Docker container with GPU support.
+Run the [whisper.cpp](https://github.com/ggerganov/) in a Docker container with GPU support.
 
 ## TLDR
 ```
