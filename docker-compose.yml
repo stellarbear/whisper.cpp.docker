@@ -1,0 +1,22 @@
+version: "3.3"
+
+services:
+  whisper-cpp:
+    build:
+      context: .
+    stdin_open: true
+    tty: true
+    environment:
+      - MODEL=${MODEL:-ggml-large-v3.bin}
+      - LANGUAGE=${LANGUAGE:-ru}
+    volumes:
+      - ./models:/usr/local/src/whisper.cpp/models
+      - ./volume:/usr/local/src/whisper.cpp/volume
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+          
